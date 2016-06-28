@@ -1,0 +1,2 @@
+C:\x\vs\SocialAnalyticsApp\obj\Debug\SocialAnalyticsApp.njsprojResolveAssemblyReference.cache
+C:\x\vs\SocialAnalyticsApp\bin\Microsoft.NodejsTools.WebRole.dll
