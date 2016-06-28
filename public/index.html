@@ -6,20 +6,30 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="/lib/jquery-1.11.1.min.js"></script>
+    <script src="/lib/bootstrap-3.3.5-dist/js/bootstrap.min.js"></script>
+    <script src="/lib/angular-1.4.3/angular.min.js"></script>
+    <script src="/lib/angular-1.4.3/angular-route.min.js"></script>
+    <script src="/lib/Chart.js"></script>
+
+    <link rel="stylesheet" href="/lib/bootstrap-3.3.5-dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="/lib/bootstrap-3.3.5-dist/css/bootstrap-theme.css" />
+    <link rel="stylesheet" href="/lib/font-awesome-4.4.0/css/font-awesome.min.css" />
+
     <link rel="stylesheet" href="stylesheets/style.css">
   </head>
 
   <body>
-    <table>
-      <tr>
-        <td style= "width:30%;">
-          <img class = "newappIcon" src="images/newapp-icon.png">
-        <td>
-            <h1>Social Analytics Application</h1>
-          <p>Thanks for creating a
-            <span class = "blue">NodeJS Starter Application</span>.
-            To get started see the Start Coding guide under your app in your dashboard.
-    </table>
+    
+      <header>
+          <img src="/images/newapp-icon.png" style="width:100px;height:100px;margin-top:20px;margin-bottom:20px;" class="center-block" />
+      </header>
+
+      <section class="container" ng-app="App">
+          <ng-view></ng-view>
+      </section>
+
   </body>
 
 </html>
