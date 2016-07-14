@@ -11,8 +11,13 @@
     };
 
     routeController.init = function (app) {
-        
-        app.get('searchdata', function (req, res) {
+
+        console.log("routerController.js execution - prior to app.gets");
+
+        app.get('/searchdata', function (req, res) {
+
+            console.log("routerController.js execution - searchdata");
+
             res.json({
                 searchData: authorData
             });
@@ -20,6 +25,8 @@
 
         app.get('/details/:id', function (req, res) {
             var author = fetchAuthor(req.params.id);
+
+            console.log("routerController.js execution - details by ID");
 
             res.json({
                 details: {

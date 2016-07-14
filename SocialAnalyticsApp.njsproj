@@ -2579,6 +2579,9 @@
     <Content Include="public\lib\font-awesome-4.4.0\scss\_rotated-flipped.scss" />
     <Content Include="public\lib\font-awesome-4.4.0\scss\_stacked.scss" />
     <Content Include="public\lib\font-awesome-4.4.0\scss\_variables.scss" />
+    <Content Include="public\views\analysis.html" />
+    <Content Include="public\views\details.html" />
+    <Content Include="public\views\search.html" />
     <Content Include="README.md" />
     <Compile Include="app.js" />
     <Content Include="public\index.html" />
@@ -2942,6 +2945,7 @@
     <Folder Include="public\lib\font-awesome-4.4.0\less\" />
     <Folder Include="public\lib\font-awesome-4.4.0\scss\" />
     <Folder Include="public\js\" />
+    <Folder Include="public\views\" />
     <Folder Include="public\stylesheets" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.Common.targets" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />

@@ -1,0 +1,30 @@
+﻿<div>
+    <div ng-show="loading">
+        <img src="/images/ajax-loader.gif" class="center-block" />
+    </div>
+
+    <div ng-show="error">
+        <span class="error">{{error}}</span>
+    </div>
+
+    <div class="well search_container" ng-show="!loading">
+        <div class="custom-search-input">
+            <div class="input-group col-md-12">
+                <input type="text" class="search-query form-control" placeholder="Search" id="searchBox" ng-model="searchQuery" ng-keyup="searchData()" />
+                <span class="input-group-btn">
+                    <button class="btn" type="button" ng-click="searchData()">
+                        <span class="glyphicon glyphicon-search"></span>
+                    </button>
+                </span>
+            </div>
+        </div>
+    </div>
+
+    <div class="results_container" ng-show="searchResults.length">
+        <div class="search_result" ng-repeat="(listItemIndex, listItem) in searchResults" ng-click="changeView('details', listItem.id)">
+            <span class="search_result_number">{{listItemIndex + 1}}</span>
+            <span class="search_result_title">{{listItem.title}}</span>
+        </div>
+    </div>
+
+</div>

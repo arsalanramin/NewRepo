@@ -6,4 +6,6 @@
         routerController.init(app);
     }; 
 
+    console.log("index.js execution");
+
 })(module.exports);

@@ -6,9 +6,14 @@
 
 // This application uses express as its web server
 // for more info, see: http://expressjs.com
+
+console.log("main app.js execution - test1");
+
 var express = require('express');
 var bodyParser = require('body-parser');
-var controllers = require('../controllers');
+var controllers = require('./controllers');
+
+console.log("main app.js execution - test2");
 
 // cfenv provides access to your Cloud Foundry environment
 // for more info, see: https://www.npmjs.com/package/cfenv
