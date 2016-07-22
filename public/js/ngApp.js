@@ -229,9 +229,9 @@
                     },
 
                     getData: function (id, res) {
-                        $http.get(baseURL + 'SocialMessage?_id=' + id)
+                        $http.get(baseURL + 'SocialMessage?id=' + id)
                             .success(function (data) {
-                                res(true, data[0]);
+                                res(true, data);
                             })
                             .error(function (err) {
                                 res(false, err && err.error || err || 'Error fetching search details');

@@ -1,0 +1,12 @@
+applications:
+- name: tds-social-analytics-app
+  memory: 64MB
+  instances: 1
+  command: node app.js
+#  path: .
+#  memory: 256M
+#  instances: 1
+#  domain: mybluemix.net
+#  name: Social Analytics App
+#  host: social-analytics-app
+#  disk_quota: 1024M
